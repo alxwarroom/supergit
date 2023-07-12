@@ -1,6 +1,6 @@
-# supergit
+# Supergit
 
-Git add, commit and push in one command + Common git usage patterns in one comand
+Supergit is a powerful tool that enhances the git workflow by providing additional functionalities and automation. It simplifies common git tasks, improves collaboration, and boosts productivity.
 
 ## Usage
 
@@ -15,27 +15,32 @@ git alias gpush "message to commit"
 ## FEATURES WANTED:
 
 ### 1 - Optionally add files to be stage
-The user should choose files to stage and commit. eg: gpush text1.txt text2.txt
+The user should choose files to stage and commit. eg: ```gpush text1.txt text2.txt```
 
 ### 2 - Optionally update readme
 The user should be able to optionally update his readme file.
-The usage will be like: ```git push "commit message" -r```
+The usage will be like: ```gpush "commit message" -r```
 - This script should open REAME.md | readme.md in terminal
 - Optionally add text after the -r option to append to readme file. 
 
-### 3 - Create an insallation script, install.sh
-The user should easily install and use supergit. Add install.sh script.
+### 3 - Create an installation script, install.sh
+The user should easily install and use supergit on any directory without coping the git-push script.
 Installing supergit with install.sh will be like:
 
 ```
 git clone https://github.com/warroom17/supergit.git
 cd supergit
+chmod u+x install.sh
 ./install.sh
 gpush "use and replace this quote with commit message anywhere"
 ```
 
+### 4 - Gpush --amend
+The user should commit with --amend option before push
+Usage: ```gpush --amend``` or ```gpush -a```
+
 
 ## Contributors
-- No commit on main branch
-- Create a branche for every feature you are working on.
+- No commits on main branch
+- Create a branch for every feature you are working on
 - Pull requests most be reviewed by two members before merging to main branch
