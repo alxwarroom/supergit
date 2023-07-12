@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+## Usage: ./git-push "New text to append to README.md" "Commit message"
+## Remeber to add exec permissions with chmod u+x git-push
+#
+
+## Reads first argument and saves in variable commit_message
+commit_message="$1"
+
+git add .
+git commit -m "$commit_message"
+git push origin main
+
+echo "Done 100%"
