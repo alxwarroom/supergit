@@ -39,8 +39,12 @@ gpush "use and replace this quote with commit message anywhere"
 The user should commit with --amend option before push
 Usage: ```gpush --amend``` or ```gpush -a```
 
+### 5 - Make directories
+The user should be able to make directories easily with the command mk.
+
 
 ## Contributors
 - No commits on main branch
 - Create a branch for every feature you are working on
 - Pull requests most be reviewed by two members before merging to main branch
+- Codes should be neatly organized and indented
